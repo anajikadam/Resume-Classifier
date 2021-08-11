@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block content %}
+
+
+<div>
+    <div >
+        <h2> Predicted Category is {{category}} </h2>
+    </div>
+    <div>
+        <br>
+        <h3>Are you sure we Predicted class is correct? </h3>
+        <br>
+        <form action="{{url_for('GetCat')}}" method="POST">
+            <button type="submit" class="btn btn-success btn-lg " id="btn-Yes" name="option" value="{{category}}">Yes correct..😊</button>
+            <!-- <button type="submit" class="btn btn-primary btn-lg " id="btn-predict-1" style="display:none;">Forward</button> -->
+        </form>
+        <br>
+        <button type="button" class="btn btn-danger btn-lg " id="btn-No" >NO</button>
+    </div>
+
+<br>
+    <div class="dropdown" id="dropdown-menus" style="display: none;">
+        <form name="Manu" action ="{{ url_for('GetCat') }}" method="POST" >
+            <select name="option" >
+            {% for manu in category_classes %}
+                <option value="{{ manu }}">{{ manu }}</option>
+            {% endfor %}
+            </select>
+            <br>
+            <input type="submit" value="Submit" />
+          </form>
+      </div>
+
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</div>
+
+{% endblock %}
