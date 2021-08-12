@@ -1,0 +1,61 @@
+ 
+
+Jr. Data Scientist  
+Consorzio  Milano  Ricerche  (CMR)    www.milanoricerche.it  -  is  hiring  graduate  students  (1  one  year  contract)  for 
+Junior  Data  Scientist  positions.    CMR  is  a  no-profit  organisation  working  through  cooperative  projects  linking 
+universities, research centres, industrial companies and small and medium-sized enterprises (SMEs) 
+
+The candidate will be responsible for developing new concepts, tools and technologies in one or more of the following 
+areas: 
+
+  On line Social Networks (OSNs). On line Social Networks (OSNs) such as Facebook, Twitter or Google+ have 
+irrupted in the society in the last few years becoming one of the most successful services within the Internet. 
+Internet  of  Things  and  Internet  of  Services.  The  Internet  of  Things  is  one  of  the  research  topics  in  the 
+Information and Communication Technology that will have a disruptive impact on our daily life in the future. 
+
+ 
+
+  Big  and  open  data  analytics:  Thanks  to  cheap  storage,  massive  processing  power,  and  tools  like  Hadoop, 
+
+organizations are now able to mine terabytes of information and derive useful business intelligence from it.  
+
+Responsibilities: under the supervision of a senior researcher, the candidate will:  
+
+ 
+
+ 
+
+ 
+
+Identify, acquire, synthesize, mine and analyse relevant data. 
+Identify emerging trends and patterns in big data collections  through highly scalable and efficient analytical 
+approaches 
+Identify  the  relationships  among  multiple  sources  and  types  of  data,  and  organizing  this  information  to 
+facilitate effective data analysis. 
+
+  Design and implement  data, information and knowledge management systems 
+  Generate reports and recommendations based on the analysis to provide decision support functionalities 
+ 
+  Design, develop and validate the aforementioned point in multiple application domain 
+
+Perform the day to day activities of projects including interaction with end users and other partners 
+
+Requirements: 
+
+  Master  degree  in  Computer  Science,  Engineering,  Stats,  Physics,  Math  (Bachelor  degrees  could  also  be 
+
+candidates with specific skills and or experiences)  
+
+  Good programming skills in Java language 
+  Good knowledge of Databases are a plus 
+
+At CMR, the candidate will: 
+
+  Be inserted in a research group 
+  Work in a creative, fast-paced environment with some really cool and brilliant people 
+  Be in a motivated team that gets a lot done 
+
+Application: 
+
+Qualified applicants are encouraged to submit their CV, cover letter and references to recruitment@milanoricerche.it 
+

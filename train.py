@@ -174,27 +174,43 @@ def defaultTrain():
 
 def trainNewData():
     path = 'Data/UpdatedResumeDataSet.csv'
-    df = pd.read_csv(path)
-    print("Main Data Loaded..........!")
 
-    new_data = pd.DataFrame(columns=['Category', 'Resume'])
-    path1 = "predTextFile"
-    pred_files = os.listdir(path1)
+    def CreateNewData():
+        data0 = pd.DataFrame(columns=['Category', 'Resume'])
+        path1 = "predTextFile"
+        pred_files = os.listdir(path1)
 
-    for i in pred_files:
-        file_path = 'predTextFile/'+i
-        resume_txt = open(file_path, 'r').read()
-        category = i.split('.')[0].split('_')[1]
-        data = {'Category':category,'Resume': resume_txt}
-        new_data = new_data.append(data, ignore_index=True)
-    t = time.localtime()
-    timestamp = time.strftime('%b-%d-%Y', t)
-    df_len = str(new_data.shape[0])
-    new_data_file = ("Data/new_data_"+df_len+'_'+ timestamp+'.csv')  # Csv file Name
-    new_data.to_csv(new_data_file)
-    print("\nNew data Saved in csv file name is",new_data_file)
+        for i in pred_files:
+            file_path = 'predTextFile/'+i
+            resume_txt = open(file_path, 'r').read()
+            category = i.split('.')[0].split('_')[-1]
+            data = {'Category':category,'Resume': resume_txt}
+            data0 = data0.append(data, ignore_index=True)
+        t = time.localtime()
+        timestamp = time.strftime('%b-%d-%Y', t)
+        df_len = str(data0.shape[0])
+        new_data_file = ("Data/new_data_"+df_len+'_'+ timestamp+'.csv')
+        data0.to_csv(new_data_file)
+        CreateNewData.new_data_file = new_data_file
+        print("\nNew data Saved in csv file name is",new_data_file)
 
-    df = df.append(new_data, ignore_index=True)   # New Data append to df
+        # create dummy resume dict
+        d = {}
+        df1 = pd.read_csv(path)
+        print("Main Data Loaded..........!")
+        for cat in list(df1['Category'].unique()):
+            res = df1[df1['Category']==cat].iloc[0,1]  # select first resume as dummy for certain category
+            d.update({cat:res})
+        new_data = pd.DataFrame(columns=['Category', 'Resume'])
+        for i in range(len(data0)):
+            cat = (data0.iloc[i,0])
+            res = (data0.iloc[i,1])+d[cat] # add dummy resume from dict
+            data = {'Category':cat,'Resume': res}
+            new_data = new_data.append(data, ignore_index=True)
+        new_data11 = df1.append(new_data, ignore_index=True)  # New Data append to df
+        return new_data11
+    df = CreateNewData()
+  
     shape = str(df.shape)
 
     df['cleaned_resume'] = df['Resume'].apply(lambda x: cleanResume(x))
@@ -237,7 +253,8 @@ def trainNewData():
     print("\nUsing KNeighborsClassifier with OneVsRestClassifier multilabel classification")
 
     clf = OneVsRestClassifier(KNeighborsClassifier())
-    clf.fit(X_train, y_train)
+    # clf.fit(X_train, y_train)
+    clf.fit(WordFeatures, y)
     prediction = clf.predict(X_test)
 
     # Results
@@ -258,7 +275,7 @@ def trainNewData():
     result = {  
                 "Number": 1102,
                 "Main File Name":path,
-                "New Data file Name": new_data_file,
+                "New Data file Name": CreateNewData.new_data_file,
                 "Shape of Dataframe after append": shape,
                 "Number of category classes": cat_len,
                 "Category classes file path":cat_path,

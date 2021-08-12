@@ -1,0 +1,127 @@
+Luella  
+Green 
+
+88605 Maximilian Mall  
+
+San Francisco  
+
+CA  
+
+  
+
+Phone 
+
+ +1 (555) 148 5584 
+
+EXPERIENCE 
+
+DOTNET ANALYST / SENIOR ANALYST 
+04/2016  present 
+
+Philadelphia, PA 
+
+  Configure workflow for Development, QA, & Production environments 
+  Provide daily administration and support of applications within the ITS applications 
+
+environment 
+
+  Perform system integration testing and analyze and report the results to pertinent 
+
+ 
+
+teams 
+Identify and troubleshoot application code-related issues (provide 3rd level 
+production support and issue resolution) 
+
+  Review and provide feedback on the final user documentation 
+  Participate in design reviews and provide inputs towards design recommendations 
+  Provide on-going support to business and content teams managing HTML sites 
+
+DOTNET APPLICATIONS DEVELOPER 
+12/2013  12/2015 
+
+Los Angeles, CA 
+
+  Support QA on functional test case review, functional/system testing and UAT 
+
+testing 
+
+  Function in all aspects of the development life cycle including design, development, 
+
+unit testing and documentation 
+
+  Provides technical support and technical advice regarding software implementation 
+
+to users and business analysts 
+
+  Determines implementation approach for new and existing business solutions 
+  Work with and assist QA with test cases and testing 
+  Perform application/database deployment employing change management policies 
+
+and procedures and support through the deployment in higher environments 
+
+  Design, build and unit test the applications with Microsoft Tools and Technologies & 
+
+Databases (SQL/Oracle) 
+
+Phoenix, AZ 
+
+DOTNET DEVELOPER 
+10/2009  07/2013 
+
+  Utilize established development tools, guidelines and develop solutions using to 
+
+ASP.NET,ASP.NET MVC, SQL Server, HTML, CSS, JavaScript,JQuery and 
+C#/VB.NET 
+
+  Assists in the establishment and clarification of specifications for assigned work 
+  Work on multiple projects concurrently, monitor activity, progress and time related 
+
+to project development 
+
+  Suggests improvements or adaptations to existing methods or processes to improve 
+
+productivity 
+
+  Works independently to specify, plan, design, develop, test and support software 
+
+components as assigned 
+
+  Collaborate with other application and instrument development teams to develop 
+
+and utilize common tools and shared components 
+
+  Good knowledge of Software Development Life Cycle 
+
+EDUCATION 
+
+Bachelors Degree in Computer Science 
+
+THE UNIVERSITY OF KANSAS 
+SKILLS 
+
+  Experience and working knowledge in OOPS concepts such as SOLID design 
+
+principles (a 
+
+  Very Strong experience in Basic .Net concepts such as Generics, Reflection, 
+
+Interfaces/ 
+
+  Excellent C# and .NET skills 
+  Key Technical Skills, Experience and Knowledge 
+  Knowledge about Cloud Concepts Loosely coupled systems, Scaling concepts, 
+
+Distribute 
+
+  Able to work without supervision using their initiative to be creative in solution 
+
+design 
+
+  Ability to translate key complex technical issues into common business language 
+  Good understanding of design patterns 
+  Excellent interpersonal manner, communication skills & customer focussed 
+  Very good all-round technology skills 
+
+ 
+

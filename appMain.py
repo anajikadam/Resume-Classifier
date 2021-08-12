@@ -79,7 +79,10 @@ def pdfReaderNew(path):
     return text, category_classes
 
 def saveTxtCategory(text, category):
-    fileName = "PredCat_"+category + '.txt'
+    t = time.localtime()
+    timestamp = time.strftime('%b-%d_%H%M', t)
+    fileName = timestamp+"_PredCat_"+category + '.txt'
+    #fileName = "PredCat_"+category + '.txt'
     with open('predTextFile/'+fileName, "w") as text_file:
         text_file.write(text)
 
